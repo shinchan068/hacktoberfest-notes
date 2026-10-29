@@ -82,7 +82,7 @@ Use the three locally bundled brand families: Barlow Semi Condensed for large he
 
 ## Layout
 
-The desktop shell is at most 1360px wide with a 250px sticky navigation column, a 58px gap and a reading column capped at 900px. A compact text title, the seven named Parts, reference links and on-page sections share the sidebar. There is no header banner or footer. At widths up to 820px, a sticky text title and Contents control replace the desktop sidebar; the menu opens all navigation in a scrollable panel. At widths up to 520px, page padding is 18px, cards and diagrams use one column, and previous/next links stack as large panels. The index uses two card columns on larger screens, with its final Part card spanning the row.
+The desktop shell is at most 1360px wide with a 250px sticky navigation column, a 58px gap and a reading column capped at 900px. A compact text title, the eight named Parts, reference links and on-page sections share the sidebar. There is no header banner or footer. At widths up to 820px, a sticky text title and Contents control replace the desktop sidebar; the menu opens all navigation in a scrollable panel. At widths up to 520px, page padding is 18px, cards and diagrams use one column, and previous/next links stack as large panels. The index uses two card columns on larger screens, with its final Part card spanning the row.
 
 ## Elevation & Depth
 
@@ -94,7 +94,7 @@ Use square corners and crisp rules. Main section separation uses a thin line; th
 
 ## Components
 
-- **Navigation:** a text site title and seven fully named Parts, with the current Part highlighted in forest. Reference links and on-page sections remain visible on desktop. Narrow screens use a native Contents disclosure with an authored square plus/minus marker. A skip link appears on focus.
+- **Navigation:** a text site title and eight fully named Parts, with the current Part highlighted in forest. Reference links and on-page sections remain visible on desktop. Narrow screens use a native Contents disclosure with an authored square plus/minus marker. A skip link appears on focus.
 - **Previous and next:** bordered, generously padded panels; next uses forest with paper text. Include the Part number, full title and drawn directional arrow. The index has no circular previous link.
 - **Overview introduction:** a forest entry panel with paper text, an orange corner tab, the pink primary action and a short four-color brand strip.
 - **Part cards:** whole-card links with forest borders, thick color-coded top rules, generous internal space and compact sequence labels. Sky, ochre, pink, forest and pale surfaces use only the Hacktoberfest palette. Hover unifies the surface and border.
