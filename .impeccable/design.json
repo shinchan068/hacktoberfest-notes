@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T05:54:01.329592+00:00",
+  "title": "Design System: Hacktoberfest study reference",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "primary-action",
+        "value": "4px 4px 0 #671912",
+        "purpose": "Hard offset shadow on the entry action."
+      }
+    ],
+    "motion": [
+      {
+        "name": "background-state",
+        "value": "background-color 130ms ease-out",
+        "purpose": "Link and button background changes, omitted under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone",
+        "value": "520px"
+      },
+      {
+        "name": "single-column",
+        "value": "820px"
+      },
+      {
+        "name": "large-desktop",
+        "value": "1200px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Entry action in the brand button style.",
+      "html": "<a class=\"ds-primary\" href=\"#\">Start with Foundations</a>",
+      "css": ".ds-primary{display:inline-flex;background:var(--pink,#e97b77);color:var(--ink,#231f20);border:2px solid var(--ink,#231f20);padding:12px 18px;font:700 16px Inter,Arial,sans-serif;text-decoration:none;box-shadow:4px 4px 0 var(--maroon,#671912)}.ds-primary:hover{background:var(--ochre,#f5b726)}.ds-primary:focus-visible{outline:3px solid var(--maroon,#671912);outline-offset:4px}"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "Glossary search with a visible label.",
+      "html": "<label class=\"ds-label\" for=\"ds-search\">Find a term</label><input class=\"ds-search\" id=\"ds-search\" type=\"search\" placeholder=\"Try model, API or license\">",
+      "css": ".ds-label{display:block;margin-bottom:8px;font:700 14px Inter,Arial,sans-serif;color:var(--ink,#231f20)}.ds-search{width:100%;padding:13px 16px;border:1.5px solid var(--forest,#3d5f58);border-radius:0;background:var(--paper,#f2f2eb);color:var(--ink,#231f20);font:16px Inter,Arial,sans-serif}.ds-search::placeholder{color:var(--forest,#3d5f58);opacity:1}.ds-search:focus-visible{outline:3px solid var(--maroon,#671912);outline-offset:4px}"
+    },
+    {
+      "name": "Study navigation",
+      "kind": "nav",
+      "description": "Named Parts with a highlighted current page; no header banner.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Study Parts\"><a href=\"#\" aria-current=\"page\">01 Foundations</a><a href=\"#\">02 Open source, licenses and Git</a></nav>",
+      "css": ".ds-nav{display:flex;flex-direction:column;gap:4px;font:13px/1.5 Inter,Arial,sans-serif}.ds-nav a{color:#2e4742;padding:11px 10px;text-decoration:none}.ds-nav a[aria-current]{background:#3d5f58;color:#f2f2eb;font-weight:700}"
+    },
+    {
+      "name": "Part card",
+      "kind": "card",
+      "description": "Color-coded linked Part introduction in the study index, using only the Hacktoberfest palette.",
+      "html": "<a class=\"ds-part\" href=\"#\"><span>Part 1 \u00b7 Sections 1\u20135</span><h3>Foundations</h3><p>Start with software, APIs and models.</p></a>",
+      "css": ".ds-part{display:block;padding:30px 25px 25px;border:1.5px solid var(--forest,#3d5f58);border-top:9px solid var(--orange,#e53927);background:var(--sky,#8bb2de);color:var(--ink,#231f20);text-decoration:none;font:14px/1.6 Inter,Arial,sans-serif}.ds-part span{font:11px/1.7 \"Martian Mono\",monospace}.ds-part h3{font:700 31px/1.08 \"Barlow Semi Condensed\",Arial,sans-serif;margin:18px 0 12px}.ds-part:hover{background:#e4e9e0;border-color:var(--maroon,#671912)}.ds-part:focus-visible{outline:3px solid var(--maroon,#671912);outline-offset:4px}"
+    },
+    {
+      "name": "One-line recap",
+      "kind": "custom",
+      "refersTo": "recap",
+      "description": "Section summary with a compact, explicit label.",
+      "html": "<div class=\"ds-recap\"><strong>In one line</strong><p>The model produces the output.</p></div>",
+      "css": ".ds-recap{padding:20px 24px;background:#e0e7df;border:1px solid var(--forest,#3d5f58);color:var(--ink,#231f20);font:16px/1.6 Inter,Arial,sans-serif}.ds-recap strong{font-size:13px;color:var(--deep,#2e4742)}.ds-recap p{margin:7px 0 0}"
+    },
+    {
+      "name": "Self-check",
+      "kind": "custom",
+      "description": "Questions open first; answers require a separate explicit reveal.",
+      "html": "<details class=\"ds-check\"><summary>Check yourself</summary><p>Is Ollama a model?</p><details><summary>Reveal answer</summary><p>No. It is a local runner.</p></details></details>",
+      "css": ".ds-check{border:1px solid #3d5f58;color:#231f20;font:16px/1.65 Inter,Arial,sans-serif}.ds-check>summary{padding:17px 20px;background:#e0e7df;font-size:14px;font-weight:700;cursor:pointer}.ds-check>p,.ds-check>details{margin:20px}.ds-check summary:focus-visible{outline:3px solid #671912;outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "overview": "This is an independent reading resource for first-year NST SMRU B.Tech students. The pinned visual authority is the [official Hacktoberfest 2026 brand kit](https://hacktoberfest.com/brand/). The implemented system uses its forest ground, warm paper, condensed display lettering, small accent fields and crisp rectangular geometry.\n\nThe source of implementation truth is `assets/style.css`; local font declarations are in `assets/fonts.css`. This document describes the standalone folder only and does not replace the parent project's design conventions.",
+    "dos": [
+      "Use the text title Hacktoberfest study reference; keep the logo footer and sidebar filler removed, and reserve the forest entry panel for the overview.",
+      "Do bundle font files so the study pages remain usable offline.",
+      "Do preserve native disclosure semantics, keyboard focus and local overflow for tables and code."
+    ],
+    "donts": [
+      "Don't use the logo to imply official endorsement or recolor it outside the supplied colorways.",
+      "Don't use orange for body text, add decorative gradients, or replace labelled diagrams with decorative illustrations."
+    ]
+  }
+}
